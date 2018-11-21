@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".EnterActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/content"
+        android:layout_weight="1.0">
+
+    </FrameLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/navgroup"
+        android:layout_weight="0.0">
+
+        <RadioButton
+            style="@style/tab_item_style"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.25"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableTop="@drawable/pic1"
+            android:text="首页"
+            android:id="@+id/radioButton1" />
+
+        <RadioButton
+            style="@style/tab_item_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableTop="@drawable/pic2"
+            android:text="新闻"
+            android:id="@+id/radioButton2"
+            android:layout_weight="0.25"
+            android:gravity="center_horizontal" />
+
+        <RadioButton
+            style="@style/tab_item_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableTop="@drawable/pic3"
+            android:text="组图"
+            android:id="@+id/radioButton3"
+            android:layout_weight="0.25"
+            android:gravity="center_horizontal" />
+
+        <RadioButton
+            style="@style/tab_item_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableTop="@drawable/pic4"
+            android:text="信息"
+            android:id="@+id/radioButton4"
+            android:layout_weight="0.25"
+            android:gravity="center_horizontal" />
+
+    </RadioGroup>
+</LinearLayout>
